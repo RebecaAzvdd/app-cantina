@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de Aluno"
+            android:textSize="24sp"
+            android:textColor="#FF3D00"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="24dp" />
+
+        <!-- Nome -->
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do aluno"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Responsável -->
+        <EditText
+            android:id="@+id/etResponsavel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do responsável"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Telefone -->
+        <EditText
+            android:id="@+id/etTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Crédito -->
+        <EditText
+            android:id="@+id/etCredito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Crédito inicial"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Botão Salvar -->
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Salvar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF3D00"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botão Cancelar -->
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Cancelar"
+            android:textColor="#FF3D00"
+            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/button_border"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</ScrollView>

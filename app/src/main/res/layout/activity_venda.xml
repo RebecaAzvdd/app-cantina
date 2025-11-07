@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nova Venda"
+            android:textSize="24sp"
+            android:textColor="#E8222B"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"/>
+
+        <!-- Spinner de alunos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione o aluno:"
+            android:textSize="16sp"
+            android:textColor="#1C1C1C"
+            android:paddingBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spAlunos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_bg"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- EditText para aluno não cadastrado -->
+        <EditText
+            android:id="@+id/etAlunoNaoCadastrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Aluno não cadastrado"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- RecyclerView com produtos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produtos"
+            android:textSize="16sp"
+            android:textColor="#1C1C1C"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@android:color/white"
+            android:padding="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Spinner forma de pagamento -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forma de pagamento:"
+            android:textSize="16sp"
+            android:textColor="#1C1C1C"
+            android:paddingBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_bg"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Total -->
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: R$ 0,00"
+            android:textSize="18sp"
+            android:textColor="#E8222B"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:gravity="end"/>
+
+        <!-- Botão finalizar -->
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Finalizar Venda"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E8222B"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Header estilo iFood -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:background="#E8222B"
+        android:padding="24dp"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantina Escolar"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha uma opção abaixo"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="4dp"
+            />
+    </LinearLayout>
+
+    <!-- Corpo -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <!-- Botão Cadastrar Aluno -->
+            <LinearLayout
+                android:id="@+id/btnCadastrarAluno"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_white_shadow"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_add_aluno"
+                    android:contentDescription="Cadastrar Aluno"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cadastrar Aluno"
+                    android:textSize="18sp"
+                    android:textColor="#1C1C1C"
+                    android:layout_marginStart="16dp"
+                    />
+            </LinearLayout>
+
+            <!-- Botão Listar Alunos -->
+            <LinearLayout
+                android:id="@+id/btnListarAlunos"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_white_shadow"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_list_aluno"
+                    android:contentDescription="Listar Alunos"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Listar Alunos"
+                    android:textSize="18sp"
+                    android:textColor="#1C1C1C"
+                    android:layout_marginStart="16dp"
+                    />
+            </LinearLayout>
+
+            <!-- Botão Nova Venda -->
+            <LinearLayout
+                android:id="@+id/btnVendas"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_white_shadow"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_venda"
+                    android:contentDescription="Nova Venda"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar Venda"
+                    android:textSize="18sp"
+                    android:textColor="#1C1C1C"
+                    android:layout_marginStart="16dp"
+                    />
+            </LinearLayout>
+
+            <!-- Botão Cadastrar Produto -->
+            <LinearLayout
+                android:id="@+id/btnProdutos"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_white_shadow"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_produto"
+                    android:contentDescription="Cadastrar Produto"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cadastrar Produto"
+                    android:textSize="18sp"
+                    android:textColor="#1C1C1C"
+                    android:layout_marginStart="16dp"
+                    />
+            </LinearLayout>
+
+            <!-- Botão Histórico de Vendas -->
+            <LinearLayout
+                android:id="@+id/btnHistorico"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_white_shadow"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_historico"
+                    android:contentDescription="Histórico"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Histórico de Vendas"
+                    android:textSize="18sp"
+                    android:textColor="#1C1C1C"
+                    android:layout_marginStart="16dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

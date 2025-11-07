@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical"
+    android:clipToPadding="false">
+
+    <!-- Informações do Produto -->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNomeProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Produto"
+            android:textSize="16sp"
+            android:textColor="#1C1C1C"
+            android:textStyle="bold"
+           />
+
+        <TextView
+            android:id="@+id/tvPrecoProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 0,00"
+            android:textSize="14sp"
+            android:textColor="#6D6D6D"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/tvQuantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qtd: 1"
+            android:textSize="14sp"
+            android:textColor="#6D6D6D"
+            android:layout_marginTop="2dp"
+            />
+    </LinearLayout>
+
+    <!-- Botão Editar -->
+    <Button
+        android:id="@+id/btnEditarQtd"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:text="Editar"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_round_red"/>
+
+    <!-- Botão Remover -->
+    <Button
+        android:id="@+id/btnRemover"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:text="Remover"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:background="@drawable/btn_round_gray"/>
+</LinearLayout>
