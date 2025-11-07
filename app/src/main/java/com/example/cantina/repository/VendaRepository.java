@@ -174,4 +174,36 @@ public class VendaRepository {
             if (db != null) db.close();
         }
     }
+
+    public List<Venda> filtrarPorData(String dataInicio, String dataFim) {
+        SQLiteDatabase db = null;
+        Cursor cursor = null;
+        List<Venda> vendas = new ArrayList<>();
+
+        try {
+            db = dbHelper.getReadableDatabase();
+            cursor = db.rawQuery(
+                    "SELECT * FROM Venda WHERE date(data) BETWEEN date(?) AND date(?) ORDER BY data DESC",
+                    new String[]{dataInicio, dataFim}
+            );
+
+            if (cursor.moveToFirst()) {
+                do {
+                    Venda venda = new Venda();
+                    venda.setId(cursor.getInt(cursor.getColumnIndexOrThrow("id")));
+                    venda.setData(cursor.getString(cursor.getColumnIndexOrThrow("data")));
+                    venda.setMetodoPagamento(cursor.getString(cursor.getColumnIndexOrThrow("metodo_pagamento")));
+                    venda.setValorTotal(cursor.getDouble(cursor.getColumnIndexOrThrow("valor_total")));
+
+                    vendas.add(venda);
+                } while (cursor.moveToNext());
+            }
+        } finally {
+            if (cursor != null) cursor.close();
+            if (db != null) db.close();
+        }
+
+        return vendas;
+    }
+
 }

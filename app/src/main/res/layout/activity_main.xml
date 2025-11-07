@@ -161,6 +161,33 @@
                     />
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/btnProdutosList"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_white_shadow"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_produto"
+                    android:contentDescription="Cadastrar Produto"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Listar/Editar Produtos"
+                    android:textSize="18sp"
+                    android:textColor="#1C1C1C"
+                    android:layout_marginStart="16dp"
+                    />
+            </LinearLayout>
+
             <!-- Botão Histórico de Vendas -->
             <LinearLayout
                 android:id="@+id/btnHistorico"

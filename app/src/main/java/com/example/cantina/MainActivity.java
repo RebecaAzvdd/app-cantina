@@ -39,22 +39,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Botão Cadastrar Produto
-//        findViewById(R.id.btnProdutos).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, ProdutoCadastroActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
+       // botao cadastrar produtos
+       findViewById(R.id.btnProdutos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(MainActivity.this, ProdutoCadastroActivity.class);
+               startActivity(intent);
+           }
+      });
+
+        findViewById(R.id.btnProdutosList).setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ProdutoListActivity.class))
+        );
+
+
 //        // Botão Histórico de Vendas
-//        findViewById(R.id.btnHistorico).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, HistoricoVendaActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+       findViewById(R.id.btnHistorico).setOnClickListener(new View.OnClickListener() {
+           @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HistoricoVendasActivity.class);
+                startActivity(intent);
+           }
+       });
     }
 }

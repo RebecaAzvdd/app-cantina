@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/tvTituloHistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Histórico de Vendas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_gravity="center"/>
+
+    <!-- FILTROS DE DATA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnDataInicio"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="Data Inicial"
+            android:textStyle="bold"
+            android:backgroundTint="#D50000"/>
+
+        <Button
+            android:id="@+id/btnDataFim"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="Data Final"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:backgroundTint="#D50000"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLimparFiltro"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Limpar Filtro"
+        android:textStyle="bold"
+        android:backgroundTint="#FF6D00"
+        android:layout_marginTop="6dp"/>
+
+    <!-- LISTA DE VENDAS -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVendas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"/>
+</LinearLayout>
