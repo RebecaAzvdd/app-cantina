@@ -2,6 +2,7 @@ package com.example.cantina;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,6 +32,14 @@ public class AlunoActivity extends AppCompatActivity {
 
         alunoRepo = new AlunoRepository(this);
         carregarAlunos();
+
+        ImageView ivLogo = findViewById(R.id.ivLogo);
+        ivLogo.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
     }
 
     private void carregarAlunos() {

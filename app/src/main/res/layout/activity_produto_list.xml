@@ -7,20 +7,32 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:orientation="vertical"
-        android:background="#E8222B"
-        android:padding="24dp"
-        android:gravity="bottom">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:src="@drawable/logo_cantina"
+            android:contentDescription="Logo Cantina"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:focusable="true" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Produtos"
-            android:textSize="26sp"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"/>
+            android:textSize="20sp"
+            android:textColor="#FF3D00"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"/>
     </LinearLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvListaProdutos"

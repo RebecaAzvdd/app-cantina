@@ -57,7 +57,7 @@
         android:textColor="@android:color/white"
         android:textSize="14sp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/btn_round_red"/>
+        android:backgroundTint="#FF6D00"/>
 
     <!-- Botão Remover -->
     <Button
@@ -67,5 +67,6 @@
         android:text="Remover"
         android:textColor="@android:color/white"
         android:textSize="14sp"
-        android:background="@drawable/btn_round_gray"/>
+        android:backgroundTint="#D50000"
+        />
 </LinearLayout>

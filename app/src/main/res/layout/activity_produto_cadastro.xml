@@ -10,9 +10,21 @@
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:orientation="vertical"
-        android:background="#E8222B"
+        android:background="#FF6D00"
         android:padding="24dp"
         android:gravity="bottom">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo_cantina"
+            android:contentDescription="Logo"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:focusable="true" />
 
         <TextView
             android:layout_width="match_parent"

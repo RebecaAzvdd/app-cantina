@@ -1,7 +1,9 @@
 package com.example.cantina;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +32,13 @@ public class ProdutoCadastroActivity extends AppCompatActivity {
             public void onClick(View v) {
                 salvarProduto();
             }
+        });
+
+        ImageView imgLogo = findViewById(R.id.imgLogo);
+        imgLogo.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 

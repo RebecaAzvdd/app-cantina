@@ -1,10 +1,12 @@
 package com.example.cantina;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -70,6 +72,13 @@ public class VendaActivity extends AppCompatActivity {
         configurarPagamento();
 
         btnFinalizar.setOnClickListener(v -> finalizarVenda());
+
+        ImageView imgLogo = findViewById(R.id.imgLogo);
+        imgLogo.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 
     private void carregarAlunos() {

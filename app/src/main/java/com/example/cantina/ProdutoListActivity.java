@@ -2,6 +2,7 @@ package com.example.cantina;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -33,6 +34,13 @@ public class ProdutoListActivity extends AppCompatActivity {
         repository = new ProdutoRepository(this);
 
         carregarProdutos();
+
+        ImageView ivLogo = findViewById(R.id.ivLogo);
+        ivLogo.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 
     private void carregarProdutos() {

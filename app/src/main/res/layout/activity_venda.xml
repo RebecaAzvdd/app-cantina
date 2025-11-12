@@ -10,17 +10,37 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Título -->
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
+        <!-- Cabeçalho com logo e título -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nova Venda"
-            android:textSize="24sp"
-            android:textColor="#E8222B"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="16dp"/>
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo_cantina"
+                android:contentDescription="Logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nova Venda"
+                android:textSize="24sp"
+                android:textColor="#E8222B"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
 
         <!-- Spinner de alunos -->
         <TextView
@@ -107,6 +127,5 @@
             android:textColor="#FFFFFF"
             android:backgroundTint="#E8222B"
             android:textStyle="bold"/>
-
     </LinearLayout>
 </ScrollView>

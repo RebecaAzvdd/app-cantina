@@ -1,8 +1,11 @@
 package com.example.cantina;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -40,6 +43,13 @@ public class HistoricoVendasActivity extends AppCompatActivity {
         btnLimparFiltro.setOnClickListener(v -> limparFiltro());
 
         carregarVendas();
+
+        ImageView imgLogo = findViewById(R.id.imgLogo);
+        imgLogo.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 
     private void escolherData(boolean inicio) {
