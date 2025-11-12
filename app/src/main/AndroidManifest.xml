@@ -21,6 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".AlunoActivity"/>
+        <activity android:name=".AlunoCadastroActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".HistoricoVendasActivity"/>
+        <activity android:name=".ProdutoCadastroActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".ProdutoListActivity"/>
+        <activity android:name=".VendaActivity"/>
     </application>
 
 </manifest>
